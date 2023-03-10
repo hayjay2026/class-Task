@@ -1,2 +1,0 @@
-# class-Tas
-# class-Tas

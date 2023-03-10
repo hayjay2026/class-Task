@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+  <form class="form" id="form" action="/action_page.php" onsubmit="myFunction()">
+    <h1 class="reg">Registration</h1>
+       <div class="input">
+            <label for="name">Name</label>
+            <input required type="text" name="name" id="name"></div>
+       
+      <div class="input">
+            <label for="Email address">Email address</label>
+            <input  id="email" required type="email" name="email" oninvalid="alert ('invalid email!')">
+      </div>
+      <div class="input"> 
+            <label for="Phone number">Phone number</label>
+            <input required type="tel" name="Phone number" id="Phone number"  ></div>
+       
+      <div class="Sex" required >
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="female">Female</label>
+      <input type="radio" name="sex" id="female" value="female"></div>
+        
+        <div class="input">
+             <label for="Password">Password</label>
+        <input required  type="Password" name="Password" id="Password"></div>
+        <div>
+         <button class="button" onclick="submit">SUBMIT</button>
+        </div></a>
+  </form>
+  <script>
+  function myFunction(){
+    alert ('The form was submitted')
+  }
+
+</script>
+  </body>
+</html>
